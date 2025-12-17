@@ -1,0 +1,42 @@
+Day-1
+Git
+
+What it is: A version control system
+
+Purpose: Tracks changes in your code over time
+
+Runs: Locally on your computer
+
+Created by: Linus Torvalds
+
+Used for:
+
+Saving versions of files
+
+Creating branches
+
+Merging code
+
+Reverting to earlier versions
+
+
+
+GitHub
+
+What it is: A hosting platform for Git repositories
+
+Purpose: Collaboration and sharing
+
+Runs: On the web (cloud)
+
+Owned by: Microsoft
+
+Used for:
+
+Storing Git repositories online
+
+Team collaboration
+
+Pull requests & code reviews
+
+Issues, CI/CD, project management

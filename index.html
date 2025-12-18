@@ -1,168 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- BASIC SEO -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AIML Student Portfolio</title>
 
+  <title>Prashanth Golla | AIML Student | AI & ML Portfolio</title>
+
+  <meta name="description" content="Prashanth Golla is a B.Tech AIML student specializing in Artificial Intelligence and Machine Learning. Explore projects, skills, and contact details.">
+  <meta name="keywords" content="Prashanth Golla, AIML student, AI ML portfolio, artificial intelligence student, machine learning projects, python developer portfolio, GitHub portfolio">
+  <meta name="author" content="Prashanth Golla">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://prashanth_557.github.io/">
+
+  <!-- OPEN GRAPH SEO -->
+  <meta property="og:title" content="Prashanth Golla | AIML Student Portfolio">
+  <meta property="og:description" content="AI & ML student portfolio showcasing skills, projects, and professional profile.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://prashanth_557.github.io/">
+
+  <!-- TWITTER SEO -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Prashanth Golla | AIML Portfolio">
+  <meta name="twitter:description" content="Artificial Intelligence & Machine Learning student portfolio">
+
+  <!-- STRUCTURED DATA (SCHEMA.ORG) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Prashanth Golla",
+    "jobTitle": "B.Tech AIML Student",
+    "url": "https://prashanth_557.github.io/",
+    "sameAs": [
+      "https://www.linkedin.com/in/prashanth_557",
+      "https://github.com/prashanth_557"
+    ],
+    "knowsAbout": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Python",
+      "Deep Learning",
+      "Web Development"
+    ]
+  }
+  </script>
+
+  <!-- STYLES -->
   <style>
+    :root {
+      --primary: #1f2933;
+      --accent: #3b82f6;
+      --bg: #f4f4f4;
+      --white: #ffffff;
+    }
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: Arial, sans-serif;
+      font-family: "Segoe UI", sans-serif;
     }
 
     body {
-      background-color: #f4f4f4;
+      background: var(--bg);
       color: #333;
-      line-height: 1.6;
     }
 
     header {
-      background: #1f2933;
+      background: linear-gradient(135deg, #1f2933, #111827);
       color: white;
-      padding: 40px 20px;
       text-align: center;
+      padding: 60px 20px;
     }
 
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
+    header h1 {
+      font-size: 40px;
     }
 
-    h2 {
-      margin-bottom: 20px;
-      color: #1f2933;
-    }
-
-    .info {
+    header p {
+      margin-top: 8px;
       font-size: 18px;
     }
 
-    #skills ul {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
+    nav {
+      margin-top: 30px;
     }
 
-    #skills li {
-      background: #1f2933;
+    nav button {
+      background: none;
+      border: none;
       color: white;
-      padding: 10px 15px;
-      margin: 5px;
-      border-radius: 5px;
+      margin: 0 12px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    nav button.active {
+      border-bottom: 2px solid var(--accent);
+      color: var(--accent);
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 40px;
+      background: var(--white);
+      border-radius: 12px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    }
+
+    section {
+      display: none;
+      animation: fade 0.4s ease;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    h2 {
+      color: var(--primary);
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    h3 {
+      color: #111827;
+    }
+
+    .skill {
+      margin-bottom: 15px;
+    }
+
+    .progress {
+      background: #ddd;
+      height: 8px;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .progress div {
+      height: 100%;
+      background: var(--accent);
     }
 
     .project {
-      background: white;
+      background: #f9f9f9;
       padding: 20px;
+      border-radius: 8px;
       margin-bottom: 15px;
-      border-radius: 5px;
     }
 
-    /* Contact Links Styling */
-    #contact a {
-      color: #1f2933;
+    .contact a {
+      display: inline-block;
+      margin: 10px 10px 0 0;
+      padding: 10px 20px;
+      background: var(--primary);
+      color: white;
+      border-radius: 30px;
       text-decoration: none;
       font-weight: bold;
     }
 
-    #contact a:hover {
-      text-decoration: underline;
-    }
-
     footer {
-      background: #1f2933;
+      background: #111827;
       color: white;
       text-align: center;
-      padding: 15px;
-      margin-top: 20px;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    @keyframes fade {
+      from {opacity:0; transform: translateY(10px);}
+      to {opacity:1; transform: translateY(0);}
     }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <h1>Prashanth Golla</h1>
-    <p>B.Tech AIML | 3rd Year Student</p>
-    <p>Malla Reddy University</p>
-  </header>
+<header>
+  <h1>Prashanth Golla</h1>
+  <p>B.Tech AIML Student | Artificial Intelligence & Machine Learning</p>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p class="info">
-      I am a 3rd-year B.Tech student specializing in Artificial Intelligence
-      and Machine Learning at Malla Reddy University. I am passionate about
-      data-driven technologies, problem-solving, and building intelligent
-      applications.
+  <nav aria-label="Portfolio Navigation">
+    <button class="active" onclick="openTab('about', this)">About</button>
+    <button onclick="openTab('skills', this)">Skills</button>
+    <button onclick="openTab('projects', this)">Projects</button>
+    <button onclick="openTab('contact', this)">Contact</button>
+  </nav>
+</header>
+
+<main>
+
+  <section id="about" class="active">
+    <h2>About Prashanth Golla</h2>
+    <p>
+      I am <strong>Prashanth Golla</strong>, a <strong>B.Tech AIML student</strong>
+      specializing in <strong>Artificial Intelligence and Machine Learning</strong>.
+      I focus on building intelligent systems using Python, ML algorithms,
+      and data-driven techniques.
     </p>
   </section>
 
   <section id="skills">
-    <h2>Technical Skills</h2>
-    <ul>
-      <li>Python</li>
-      <li>Machine Learning</li>
-      <li>Deep Learning (Basics)</li>
-      <li>Data Structures</li>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>Git & GitHub</li>
-    </ul>
+    <h2>Technical Skills in AI & ML</h2>
+
+    <div class="skill">Python<div class="progress"><div style="width:90%"></div></div></div>
+    <div class="skill">Machine Learning<div class="progress"><div style="width:85%"></div></div></div>
+    <div class="skill">Deep Learning<div class="progress"><div style="width:70%"></div></div></div>
+    <div class="skill">HTML & CSS<div class="progress"><div style="width:95%"></div></div></div>
   </section>
 
   <section id="projects">
-    <h2>Academic & Personal Projects</h2>
+    <h2>Artificial Intelligence Projects</h2>
 
-    <div class="project">
-      <h3>Student Performance Prediction</h3>
+    <article class="project">
+      <h3>Student Performance Prediction (Machine Learning)</h3>
       <p>
-        Built a machine learning model to predict student performance using
-        Python and Scikit-learn.
+        A machine learning project using Python and Scikit-learn to predict
+        student academic performance based on data features.
       </p>
-    </div>
+    </article>
 
-    <div class="project">
-      <h3>Portfolio Website</h3>
+    <article class="project">
+      <h3>SEO Optimized Portfolio Website</h3>
       <p>
-        Designed a personal portfolio website using HTML and CSS to showcase
-        skills and projects.
+        A professional portfolio website built using HTML, CSS, JavaScript,
+        and modern SEO techniques.
       </p>
-    </div>
-
+    </article>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-
-    <p>
-      Email:
-      <a href="mailto:prashanthyadav0819@email.com">
-        prashanthyadav0819@email.com
-      </a>
-    </p>
-
-    <p>
-      LinkedIn:
-      <a href="https://www.linkedin.com/in/prashanth_557" target="_blank">
-        linkedin.com/in/prashanth_557
-      </a>
-    </p>
-
-    <p>
-      GitHub:
-      <a href="https://github.com/prashanth_557" target="_blank">
-        github.com/prashanth_557
-      </a>
-    </p>
+  <section id="contact" class="contact">
+    <h2>Contact Prashanth Golla</h2>
+    <a href="mailto:prashanthyadav0819@email.com">Email</a>
+    <a href="https://www.linkedin.com/in/prashanth_557" target="_blank">LinkedIn</a>
+    <a href="https://github.com/prashanth_557" target="_blank">GitHub</a>
   </section>
 
-  <footer>
-    <p>© 2025 Prashanth Golla | AIML Student</p>
-  </footer>
+</main>
+
+<footer>
+  © 2025 Prashanth Golla | AIML Student Portfolio
+</footer>
+
+<script>
+function openTab(id, btn) {
+  document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
+  document.querySelectorAll("nav button").forEach(b => b.classList.remove("active"));
+  document.getElementById(id).classList.add("active");
+  btn.classList.add("active");
+}
+</script>
 
 </body>
 </html>

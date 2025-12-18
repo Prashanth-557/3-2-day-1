@@ -1,0 +1,7 @@
+update js file
+update seo file
+add branchs 
+pull and push request commands 
+pull request in repository
+collabrations
+merging

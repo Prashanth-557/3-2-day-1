@@ -1,0 +1,202 @@
+1.Which command is used to create a new database in MySQL?
+*
+1 point
+A) CREATE DB
+B) CREATE DATABASE
+C) NEW DATABASE
+2.Which data type is used to store large text data in MySQL?
+*
+1 point
+A) VARCHAR
+B) TEXT
+C) STRING
+D) CHAR
+3.Which clause is used to filter records in MySQL?
+*
+1 point
+A) ORDER BY
+B) WHERE
+C) HAVING
+D) GROUP BY
+4.Which keyword is used to prevent duplicate records in the result set?
+*
+1 point
+A) DISTINCT
+B) UNIQUE
+C) PRIMARY
+D) DIFFERENT
+Option 5
+5.Which of the following is a DDL (Data Definition Language) command?
+*
+1 point
+A) SELECT
+B) INSERT
+C) CREATE
+D) UPDATE
+6.Which command is used to remove a table from the database?
+*
+1 point
+A) DELETE TABLE
+B) DROP TABLE
+C) REMOVE TABLE
+D) TRUNCATE TABLE
+7.Which JOIN returns all records from the left table and matching records from the right table?
+*
+1 point
+A) INNER JOIN
+B) LEFT JOIN
+C) RIGHT JOIN
+D) FULL JOIN
+8.Which function is used to count the number of rows in MySQL?
+*
+1 point
+A) SUM()
+B) COUNT()
+C) TOTAL()
+D) NUMBER()
+9.What is the default port number of MySQL?
+*
+1 point
+A) 1433
+B) 1521
+C) 3306
+D) 8080
+10.Which statement is used to remove all records from a table, but not the table itself?
+*
+1 point
+A) DELETE
+B) DROP
+C) REMOVE
+D) TRUNCATE
+11.Which constraint is used to enforce uniqueness of a column’s values?
+
+
+*
+1 point
+A) FOREIGN KEY
+B) UNIQUE
+C) CHECK
+D) DEFAULT
+12.Which function returns the current date and time in MySQL?
+
+
+*
+1 point
+A) NOW()
+B) CURRENT_DATE()
+C) SYSDATE()
+D) GETDATE()
+13.Which command is used to modify an existing table structure?
+
+
+*
+1 point
+A) MODIFY TABLE
+B) CHANGE TABLE
+C) ALTER TABLE
+D) UPDATE TABLE
+14.Which storage engine in MySQL supports transactions?
+
+
+*
+1 point
+A) MyISAM
+B) InnoDB
+C) MEMORY
+D) CSV
+15.Which of the following is NOT a valid MySQL aggregate function?
+
+
+*
+1 point
+A) SUM()
+B) AVG()
+C) MAX()
+D) MINIMUM()
+16.Which clause is used with aggregate functions to filter grouped data?
+
+
+*
+1 point
+A) WHERE
+B) HAVING
+C) GROUP BY
+D) ORDER BY
+17.Which MySQL function is used to combine the values of multiple columns?
+
+
+*
+1 point
+A) JOIN()
+B) CONCAT()
+C) MERGE()
+D) UNION()
+18.Which SQL keyword is used to retrieve data from a database?
+
+
+*
+1 point
+A) SELECT
+B) FETCH
+C) RETRIEVE
+D) GET
+19.Which of these is a valid statement to add a new column to an existing table?
+
+
+*
+1 point
+A) ALTER TABLE table_name ADD column_name datatype;
+B) MODIFY TABLE table_name NEW COLUMN column_name datatype;
+C) UPDATE TABLE table_name SET column_name datatype;
+D) ADD COLUMN table_name column_name datatype;
+20.Which command is used to provide privileges to users in MySQL?
+
+
+*
+1 point
+A) GIVE
+B) GRANT
+C) PERMIT
+D) ALLOW
+21.Which of the following is used to fetch the top N rows in MySQL?
+
+
+*
+1 point
+A) TOP
+B) FIRST
+C) LIMIT
+D) ROWNUM
+22.Which index improves the search performance of a specific column in a table?
+
+
+*
+1 point
+A) Primary Index
+B) Composite Index
+C) Unique Index
+D) Single Column Index
+23.Which operator is used to compare a value to a set of possible values?
+
+
+*
+1 point
+A) IN
+B) BETWEEN
+C) LIKE
+D) EXISTS
+24.Which function is used to find the length of a string in MySQL?
+
+
+*
+1 point
+A) SIZE()
+B) LENGTH()
+C) CHAR_LENGTH()
+D) STRLEN()
+25.Which MySQL command is used to back up a database?
+1 point
+A) mysql_backup
+B) mysqldump
+C) mysqlsave
+D) backupdb

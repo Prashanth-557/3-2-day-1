@@ -1,0 +1,60 @@
+import requests
+from flask import Flask, render_template
+from dotenv import load_dotenv
+from pathlib import Path
+import os
+
+# 🔹 Force load .env file (Windows-safe)
+env_path = Path(__file__).resolve().parent / ".env"
+load_dotenv(dotenv_path=env_path)
+
+# 🔹 Get API key
+api_key = os.getenv("api_key")
+
+# 🔹 API details
+url = "https://api.api-ninjas.com/v1/quotes"
+headers = {
+    "X-Api-Key": api_key
+}
+
+def get_quote():
+    response = requests.get(url, headers=headers)
+
+    if response.status_code != 200:
+        return "Failed to fetch quote", "API Error", "Error"
+
+    data = response.json()
+
+    if isinstance(data, list) and len(data) > 0:
+        quote_value = data[0].get("quote", "No quote found")
+        author_value = data[0].get("author", "Unknown")
+        category_value = data[0].get("category", "General")
+        return quote_value, author_value, category_value
+    else:
+        return "No quote found", "Unknown", "Unknown"
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    quote, author, category = get_quote()
+    return render_template(
+        "ai_quote.html",
+        quote=quote,
+        author=author,
+        category=category
+    )
+
+if __name__ == "__main__":
+    app.run(debug=True)
+
+
+
+
+
+
+
+--> created html registration page 
+-->modified index.html page
+-->ai generator page
+->imported some packages
